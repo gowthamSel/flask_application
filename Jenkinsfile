@@ -3,11 +3,10 @@ currentBuild.displayName = "FlaskApplication: " + currentBuild.number
 pipeline {
     agent any
 
-    stages {
-               
+    stages {               
         stage('Build Docker Image') {
             steps {
-                sh "docker build . -t flaskapplication"
+                sh "sudo docker build . -t flaskapplication"
             }
         }
 

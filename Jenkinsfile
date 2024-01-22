@@ -6,7 +6,7 @@ pipeline {
     stages {               
         stage('Build Docker Image') {
             steps {
-                sh "sudo docker build . -t flaskapplication"
+                sh "docker build . -t flaskapplication"
             }
         }
 

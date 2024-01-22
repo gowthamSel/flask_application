@@ -12,7 +12,7 @@ pipeline {
 
         stage('Spin Container') {
             steps {
-                sh "docker run -itd -p 6666:8080 --name flask flaskapplication"
+                sh "docker run -itd -p 7070:8080 --name flask flaskapplication"
             }
         }
     
